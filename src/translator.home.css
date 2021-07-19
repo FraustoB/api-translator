@@ -1,0 +1,27 @@
+.translator-home{
+    height: 500px;
+    width: 700px;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+.translator-title{
+    padding-bottom: 3rem;
+}
+.opacity{
+    opacity: 0;
+}
+
+.translator-response{
+    margin-top: 2rem;
+   font-size:  30px;
+   font-family: 'Dancing Script', cursive;
+}
+
+.translator-heading,h2{
+    font-size: 35px;
+    padding-top: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+}

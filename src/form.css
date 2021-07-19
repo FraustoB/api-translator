@@ -1,0 +1,24 @@
+.Form {
+    display: inline;
+    width: 20px;
+}
+
+.form-select{
+    display: inline;
+    width: 10rem;
+}
+
+input,select,button{
+    display: inline-block;
+padding: 10px 15px;
+font-size: 20px;
+border-radius: 0;
+-webkit-appearance: none;
+border: 1px solid transparent;
+}
+
+button{
+    background-color: black;
+    color: white;
+}
+
