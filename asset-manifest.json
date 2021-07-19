@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/FraustoB/api-translator/static/css/main.4d344466.chunk.css",
-    "main.js": "/FraustoB/api-translator/static/js/main.3e4c9b80.chunk.js",
-    "main.js.map": "/FraustoB/api-translator/static/js/main.3e4c9b80.chunk.js.map",
-    "runtime-main.js": "/FraustoB/api-translator/static/js/runtime-main.9891abf2.js",
-    "runtime-main.js.map": "/FraustoB/api-translator/static/js/runtime-main.9891abf2.js.map",
-    "static/js/2.2dd260c6.chunk.js": "/FraustoB/api-translator/static/js/2.2dd260c6.chunk.js",
-    "static/js/2.2dd260c6.chunk.js.map": "/FraustoB/api-translator/static/js/2.2dd260c6.chunk.js.map",
-    "static/js/3.9453c675.chunk.js": "/FraustoB/api-translator/static/js/3.9453c675.chunk.js",
-    "static/js/3.9453c675.chunk.js.map": "/FraustoB/api-translator/static/js/3.9453c675.chunk.js.map",
-    "index.html": "/FraustoB/api-translator/index.html",
-    "static/css/main.4d344466.chunk.css.map": "/FraustoB/api-translator/static/css/main.4d344466.chunk.css.map",
-    "static/js/2.2dd260c6.chunk.js.LICENSE.txt": "/FraustoB/api-translator/static/js/2.2dd260c6.chunk.js.LICENSE.txt"
+    "main.css": "/api-translator/static/css/main.4d344466.chunk.css",
+    "main.js": "/api-translator/static/js/main.3e4c9b80.chunk.js",
+    "main.js.map": "/api-translator/static/js/main.3e4c9b80.chunk.js.map",
+    "runtime-main.js": "/api-translator/static/js/runtime-main.bbcf0153.js",
+    "runtime-main.js.map": "/api-translator/static/js/runtime-main.bbcf0153.js.map",
+    "static/js/2.2dd260c6.chunk.js": "/api-translator/static/js/2.2dd260c6.chunk.js",
+    "static/js/2.2dd260c6.chunk.js.map": "/api-translator/static/js/2.2dd260c6.chunk.js.map",
+    "static/js/3.9453c675.chunk.js": "/api-translator/static/js/3.9453c675.chunk.js",
+    "static/js/3.9453c675.chunk.js.map": "/api-translator/static/js/3.9453c675.chunk.js.map",
+    "index.html": "/api-translator/index.html",
+    "static/css/main.4d344466.chunk.css.map": "/api-translator/static/css/main.4d344466.chunk.css.map",
+    "static/js/2.2dd260c6.chunk.js.LICENSE.txt": "/api-translator/static/js/2.2dd260c6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9891abf2.js",
+    "static/js/runtime-main.bbcf0153.js",
     "static/js/2.2dd260c6.chunk.js",
     "static/css/main.4d344466.chunk.css",
     "static/js/main.3e4c9b80.chunk.js"
