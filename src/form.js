@@ -1,25 +1,20 @@
 import React from 'react';
 import './form.css';
 
-export default function Form({ changeLangSelect, changeTransText, contactApi, text }) {
+export default function Form({ apiInfo, setApiInfo, contactApi }) {
 
-    const handleTransText=(e) => {
-        changeTransText(e.target.value);
-    };
-    const handleSelectChoice=(e) => {
-        changeLangSelect(e.target.value);
-    }
+    const handleInput=(e) => setApiInfo({ ...apiInfo, userText: e.target.value });
+    const handleSelectChoice=(e) => setApiInfo({ ...apiInfo, langSlct: e.target.value });
 
     const handleSubmit=(e) => {
         e.preventDefault();
         contactApi();
-        changeTransText('');
-        changeLangSelect('');
+
     }
 
     return (
         <form className='Form' onSubmit={handleSubmit}>
-            <input type='text' value={text} onChange={handleTransText} placeholder='What to translate?'></input>
+            <input type='text' name='userText' value={apiInfo.userText} onChange={handleInput} placeholder='What to translate?'></input>
 
             <select onChange={handleSelectChoice} aria-label=".form-select-sm example">
                 <option>Choose Language</option>

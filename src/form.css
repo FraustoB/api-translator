@@ -16,6 +16,9 @@ border-radius: 0;
 -webkit-appearance: none;
 border: 1px solid transparent;
 }
+input{
+    width: 20vw;
+}
 
 button{
     background-color: black;

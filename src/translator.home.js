@@ -3,43 +3,46 @@ import Form from './form.js';
 import axios from 'axios';
 import './translator.home.css'
 
-
+const initState={
+    userText: '',
+    langSlct: '',
+    returnText: '',
+    hasMsg: false
+}
 
 export default function TranslatorHome() {
-    const [transText, changeTransText]=useState('');
-    const [langSelect, changeLangSelect]=useState('');
-    const [responseText, changeResponseText]=useState('');
-    const [responseAvailable, changeResponseAvailable]=useState(false);
+    const [apiInfo, setApiInfo]=useState(initState);
+
     const contactApi=() => {
-        axios.get(`https://api.funtranslations.com/translate/${langSelect}.json?text=${transText}`).then(
+        axios.get(`https://api.funtranslations.com/translate/${apiInfo.langSlct}.json?text=${apiInfo.userText}`).then(
             (response) => {
-                changeResponseText(response.data.contents.translated);
+                setApiInfo({ ...apiInfo, returnText: response.data.contents.translated, hasMsg: true });
                 console.log(response);
-                changeResponseAvailable(true);
+                // setApiInfo({...apiInfo, hasMsg: true})
             }
         ).catch(function (error) {
             if (error.response) {
                 // The request was made and the server responded with a status code
                 // that falls out of the range of 2xx
                 console.log(error.response.data);
-                changeResponseText('Hmmm... No longer can translate that. Try another Language')
+                setApiInfo({ returnText: 'Hmmm... No longer can translate that. Try another Language' })
             }
         })
     }
 
     return (
         <div className='translator-home'>
-            <h1 className='translator-title'> Simple Translator
+            <h1 className='translator-title'> Api-Translator
 
             </h1>
 
-            <Form contactApi={contactApi}
-                text={transText} changeTransText={changeTransText}
-                lang={langSelect} changeLangSelect={changeLangSelect}
+            <Form
+                contactApi={contactApi}
+                apiInfo={apiInfo} setApiInfo={setApiInfo}
             />
-            <div className={responseAvailable===false? 'opacity':'translator-heading'}>
-                <h2>Heres Your Translated Text</h2>
-                {responseText===''? null:<div className='translator-response'>{responseText}</div>}
+            <div className={apiInfo.hasMsg===false? 'opacity':'translator-heading'}>
+                <h2>{apiInfo.langSlct} Translation</h2>
+                {apiInfo.returnText===''? null:<div className='translator-response'>{apiInfo.returnText}</div>}
             </div>
 
         </div >
